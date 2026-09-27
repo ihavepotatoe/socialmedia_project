@@ -22,7 +22,7 @@ async function loadPosts() {
         <h1>${post.title}</h1>
         <p>
         Author:
-        <a href="/profile?username=${post.author.name}">
+        <a href="/profile.html?username=${post.author.name}">
         ${post.author.name}
         </a>
         </p>
@@ -43,7 +43,7 @@ async function loadPosts() {
 loadPosts();
 
 editButton.addEventListener("click", () => {
-  window.location.href = `/edit?id=${postId}`;
+  window.location.href = `/edit.html?id=${postId}`;
 });
 
 deleteButton.addEventListener("click", async () => {

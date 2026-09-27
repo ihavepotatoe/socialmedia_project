@@ -25,7 +25,7 @@ function displayPosts(posts) {
     const postElement = document.createElement("div");
 
     postElement.addEventListener("click", () => {
-      window.location.href = `/post?id=${post.id}`;
+      window.location.href = `/post.html?id=${post.id}`;
     });
 
     postElement.innerHTML = `

@@ -11,9 +11,9 @@ if (accessToken) {
     localStorage.removeItem("accessToken");
     localStorage.removeItem("username");
 
-    window.location.href = "/";
+    window.location.href = "./index.html";
   });
 } else {
   authLink.textContent = "Login";
-  authLink.href = "/";
+  authLink.href = "./index.html";
 }
