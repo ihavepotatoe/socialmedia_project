@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feed</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/feed">Feed</a>
+        <a href="/profile">My profile</a>
+        <a href="/create">Make post</a>
+        <a href="/" id="authLink">Login</a>
+      </nav>
+    </header>
+
+    <h1>posts</h1>
+    <input type="text" id="searchInput" placeholder="search" />
+
+    <div id="postBox"></div>
+
+    <p id="message"></p>
+
+    <script type="module" src="./feed.js"></script>
+    <script type="module" src="./nav.js"></script>
+  </body>
+</html>
