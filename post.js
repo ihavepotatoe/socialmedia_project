@@ -22,7 +22,7 @@ async function loadPosts() {
         <h1>${post.title}</h1>
         <p>
         Author:
-        <a href="/profile.html?username=${post.author.name}">
+        <a href="./profile.html?username=${post.author.name}">
         ${post.author.name}
         </a>
         </p>
@@ -43,7 +43,7 @@ async function loadPosts() {
 loadPosts();
 
 editButton.addEventListener("click", () => {
-  window.location.href = `/edit.html?id=${postId}`;
+  window.location.href = `./edit.html?id=${postId}`;
 });
 
 deleteButton.addEventListener("click", async () => {
@@ -52,7 +52,7 @@ deleteButton.addEventListener("click", async () => {
 
     message.textContent = "post deleted";
 
-    window.location.href = "/feed";
+    window.location.href = "./feed.html";
   } catch (error) {
     message.textContent = error.message;
   }
